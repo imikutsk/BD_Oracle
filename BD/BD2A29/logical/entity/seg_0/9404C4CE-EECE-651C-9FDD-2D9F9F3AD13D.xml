@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9404C4CE-EECE-651C-9FDD-2D9F9F3AD13D" name="Pracochlonnosc">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 16:26:19 UTC</createdTime>
+<commentInRDBMS>Wycenianie pracochlonnosci kazdego z obszarow kazdej oferty w osobodniach.</commentInRDBMS>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Pracochlonnosci</preferredAbbreviation>
+<shortName>Pracochlonnosc</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID Oferty" id="30C3A4CE-47C0-D49D-D3C1-5B8B74C8B2D9">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 18:17:38 UTC</createdTime>
+<generatorID>138729B1-8E1A-022B-7BB2-FF3F912F28B5</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<referedAttribute>C8481E25-CCFB-D98A-9B1C-C33C069BF782</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID obszaru" id="7C341112-F9C4-9A92-5C62-2739C069590A">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 18:19:25 UTC</createdTime>
+<generatorID>B2C0B580-7C3D-ED33-CEF5-23FAC81859A7</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<referedAttribute>43476714-6C3E-4DF8-7094-BA778890DB56</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Odpowiedzialny" id="EAB067F2-CCA9-4589-D1C2-1D09FF32C565">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 16:47:35 UTC</createdTime>
+<commentInRDBMS>Dwuwartościowy. Wartość: oferent lub zamawiejący.</commentInRDBMS>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Wartosc pracochlonnosci" id="64329E2F-A784-6B96-4AB2-85D51FD2DCFB">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 16:42:46 UTC</createdTime>
+<commentInRDBMS>Wartość w osobodniach</commentInRDBMS>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0BFD4BAF-72BE-D299-2A38-9058FD0D75CB" name="PRACOCHLONNOSC">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-07 15:24:17 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>138729B1-8E1A-022B-7BB2-FF3F912F28B5,B2C0B580-7C3D-ED33-CEF5-23FAC81859A7</newElementsIDs>
+<usedAttributes>
+<attributeRef>30C3A4CE-47C0-D49D-D3C1-5B8B74C8B2D9</attributeRef>
+<attributeRef>7C341112-F9C4-9A92-5C62-2739C069590A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

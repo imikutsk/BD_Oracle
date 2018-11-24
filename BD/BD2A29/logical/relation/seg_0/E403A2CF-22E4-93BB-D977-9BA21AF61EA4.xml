@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Oferta_modul" directorySegmentName="seg_0" id="E403A2CF-22E4-93BB-D977-9BA21AF61EA4">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-21 22:11:37 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<sourcePk>1BCF3E1A-54C6-360E-6C82-E17C366F0CC6</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>składa się</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>26F6E26A-0F5B-74BA-968B-FAC5015E1B89</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3FEA77C6-6BFF-EC03-7F78-133EF03B91E6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

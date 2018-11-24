@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Oferta_Pracochlonnosc" directorySegmentName="seg_0" id="138729B1-8E1A-022B-7BB2-FF3F912F28B5">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 18:17:38 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<sourcePk>1BCF3E1A-54C6-360E-6C82-E17C366F0CC6</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>opisana</nameOnSource>
+<nameOnTarget>dotyczy</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>26F6E26A-0F5B-74BA-968B-FAC5015E1B89</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9404C4CE-EECE-651C-9FDD-2D9F9F3AD13D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

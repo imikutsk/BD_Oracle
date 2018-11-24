@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Modul_obszaru" directorySegmentName="seg_0" id="8D4F2FF8-8555-F690-A2F8-83F43553BB17">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-21 22:24:12 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<sourcePk>B351966A-39B6-C020-6646-100C32F210CC</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>grupuje</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3FEA77C6-6BFF-EC03-7F78-133EF03B91E6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>18BF3EFE-8439-B364-BAB9-54AE0481FD24</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

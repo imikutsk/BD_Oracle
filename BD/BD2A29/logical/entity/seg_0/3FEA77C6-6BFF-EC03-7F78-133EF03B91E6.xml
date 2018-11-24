@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3FEA77C6-6BFF-EC03-7F78-133EF03B91E6" name="Modul">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 16:23:11 UTC</createdTime>
+<commentInRDBMS>Moduly oprogramowania.</commentInRDBMS>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Moduly</preferredAbbreviation>
+<shortName>Modul</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID Oferty" id="4F709ECF-43D3-37F7-B946-2927C322EEAA">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-21 22:11:37 UTC</createdTime>
+<generatorID>E403A2CF-22E4-93BB-D977-9BA21AF61EA4</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<referedAttribute>C8481E25-CCFB-D98A-9B1C-C33C069BF782</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID modulu" id="D8E7049E-E2B4-4D47-416C-325258F2E243">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 17:19:30 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa" id="B35CC657-D93C-E71E-1682-120CAB52914B">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 17:23:06 UTC</createdTime>
+<commentInRDBMS>Nazwa modulu.</commentInRDBMS>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B351966A-39B6-C020-6646-100C32F210CC" name="MODUL_PK">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 17:23:40 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>D8E7049E-E2B4-4D47-416C-325258F2E243</newElementsIDs>
+<usedAttributes>
+<attributeRef>D8E7049E-E2B4-4D47-416C-325258F2E243</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="AF14D3D7-849C-41B7-A3DA-183A224A2949" name="Modul_UK">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-06 13:53:13 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<newElementsIDs>B35CC657-D93C-E71E-1682-120CAB52914B</newElementsIDs>
+<usedAttributes>
+<attributeRef>B35CC657-D93C-E71E-1682-120CAB52914B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="9525F7F0-7F02-5F88-98B2-C435C1BF2E7F" name="Modul_2_UK">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-09 15:36:48 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<newElementsIDs>E403A2CF-22E4-93BB-D977-9BA21AF61EA4,B35CC657-D93C-E71E-1682-120CAB52914B</newElementsIDs>
+<usedAttributes>
+<attributeRef>4F709ECF-43D3-37F7-B946-2927C322EEAA</attributeRef>
+<attributeRef>B35CC657-D93C-E71E-1682-120CAB52914B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

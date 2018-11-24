@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="782A7D77-3E4A-A378-AF99-FEECCC04023F" name="Oferty">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<commentInRDBMS>Oferty oprogramowania.</commentInRDBMS>
+<generatorID>26F6E26A-0F5B-74BA-968B-FAC5015E1B89</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<abbreviation>Oferta</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Oferty" id="40EF0EF2-1846-E1DB-3459-0F832999CD3B">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>C8481E25-CCFB-D98A-9B1C-C33C069BF782</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="C84510D2-73CC-5DB8-B137-155A683E5D28">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<commentInRDBMS>Nazwa  oprogramowania.</commentInRDBMS>
+<generatorID>72B103F9-73C3-7EDC-417F-4509215FA811</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena" id="11F0A2CF-267A-E319-38BF-7744C6716B48">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<commentInRDBMS>Cena oprogramowania (w zlotych)</commentInRDBMS>
+<generatorID>B7138872-69B9-BC52-919B-EBC20F14865D</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,9,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="88BE0177-13CE-A8CD-96A8-1660881893DD" name="Oferty_PK">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>1BCF3E1A-54C6-360E-6C82-E17C366F0CC6</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40EF0EF2-1846-E1DB-3459-0F832999CD3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E12E362B-7354-4B5C-3989-010C2333A62C" name="Oferty_UN">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>BADEEF91-A8C4-677F-8F11-79D1BE53C429</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C84510D2-73CC-5DB8-B137-155A683E5D28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

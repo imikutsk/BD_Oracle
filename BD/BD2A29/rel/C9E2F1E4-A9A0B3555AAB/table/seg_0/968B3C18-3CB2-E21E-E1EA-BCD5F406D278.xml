@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="968B3C18-3CB2-E21E-E1EA-BCD5F406D278" name="Moduly_w_obszarze">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:21 UTC</createdTime>
+<commentInRDBMS>Moduly w obszarze funkcjonalnym.</commentInRDBMS>
+<generatorID>18BF3EFE-8439-B364-BAB9-54AE0481FD24</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<abbreviation>Modul_w_obszarze</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_obszaru" id="FC872AF5-EDC3-80BE-2168-FA2BB3516DF0">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:21 UTC</createdTime>
+<generatorID>4F48032D-6543-A74E-3038-9F6E16C521F6</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E36C1D9-EBD9-EA15-3316-66F8FFB02C76" referredColumn="06A0AF4F-E370-E15E-9E7A-843FAD4BD23F"/>
+</associations>
+</Column>
+<Column name="ID_modulu" id="CD58B81E-502B-EB58-A4FE-9D9D984C27A2">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:21 UTC</createdTime>
+<generatorID>2754DEFA-1CB9-5740-9E11-043ECCF9727D</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB344036-C25C-873C-C1DE-915E594F4C39" referredColumn="B8C468A6-14E0-C107-7DD0-DE2551A3D5D6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61BCA69B-D5B5-0B49-56BC-6F0435674CB7" name="MWO_PK">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:21 UTC</createdTime>
+<generatorID>47BC32CC-BF45-65B1-DC52-806F3DC56A24</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC872AF5-EDC3-80BE-2168-FA2BB3516DF0"/>
+<colUsage columnID="CD58B81E-502B-EB58-A4FE-9D9D984C27A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E8F3707-52CD-EB66-3B5D-E935369509D7" name="MWO_Moduly_FK__IDX">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-07 11:45:38 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD58B81E-502B-EB58-A4FE-9D9D984C27A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51F4024C-6EA4-0FD6-592D-EC41453A233D" name="MWO_Moduly_FK">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>8D4F2FF8-8555-F690-A2F8-83F43553BB17</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD58B81E-502B-EB58-A4FE-9D9D984C27A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF0DB2B5-BAC6-B8D3-0DB3-5F351E3EF4B0" name="MWO_OF_FK">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>7D50AC4F-4531-E50F-E7C4-94776F16DB9F</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC872AF5-EDC3-80BE-2168-FA2BB3516DF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

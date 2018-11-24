@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACB9BF3B-FE08-54B1-985D-4E1B1CC4925F" name="Obszary_funkcjonalne">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:21 UTC</createdTime>
+<commentInRDBMS>Obszary funkcjonalne, na ktore sie dziela moduly.</commentInRDBMS>
+<generatorID>79092018-BF44-CA4C-BFF7-8B2745B42CEA</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<abbreviation>Obszar</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_obszaru" id="06A0AF4F-E370-E15E-9E7A-843FAD4BD23F">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>43476714-6C3E-4DF8-7094-BA778890DB56</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="4C3EADB0-0E0B-836B-8FB4-3234A5B36494">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<commentInRDBMS>Nazwa obszaru funkcjonalnego.</commentInRDBMS>
+<generatorID>C45B54D2-9201-CAFC-9326-F4E1581911FA</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Opis" id="F4876FEC-366C-EDE6-DF7C-4B40B066BF6C">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<commentInRDBMS>Opis obszaru.</commentInRDBMS>
+<generatorID>F7772A70-5E9D-943C-3960-40828375B61A</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C24DA079-9616-88FB-A014-506A871574B5" name="OF_PK">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>7E654749-6BE2-39FE-C984-CB5E5F52FE23</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06A0AF4F-E370-E15E-9E7A-843FAD4BD23F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8277DF60-8D71-7411-8D5E-22151C4C4972" name="OF_UN">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>163993B5-6A50-919E-E170-BD6CC5830CCE</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C3EADB0-0E0B-836B-8FB4-3234A5B36494"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

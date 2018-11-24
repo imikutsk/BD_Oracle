@@ -1,0 +1,35 @@
+SQL> INSERT INTO Oferty (ID_Oferty, Nazwa, Cena)
+values (6, 'Program_1', 12000);
+
+1 row inserted.
+
+SQL> INSERT INTO Moduly (Nazwa, ID_Oferty)
+values ('Modul_new', 6);
+
+1 row inserted.
+
+SQL> INSERT INTO Moduly (Nazwa, ID_Oferty)
+values ('Fakturowanie', 6);
+
+1 row inserted.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> UPDATE Oferty
+SET Cena=Cena*1.2
+WHERE Cena<13000;
+
+1 row updated.
+
+SQL> DELETE FROM Oferty
+WHERE Nazwa='Program_1';
+
+1 row deleted.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> spool off

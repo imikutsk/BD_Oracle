@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Pracochlonnosci" directorySegmentName="seg_0" id="2B054E59-6630-E0D6-FC7B-C910E31E7C9F">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-07 12:31:56 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Odpowiedzialny" id="4B4636E5-B140-5712-417B-0F7A852E2077">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-07 12:31:56 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_obszaru" id="8E6B616E-C31F-8103-1650-F77F23A037CF">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-07 12:31:56 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Wartosc_pracochlonnosci" id="A1E5E660-1993-75A3-8A48-98489D384695">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-07 12:31:56 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Oferty" id="F9492F6F-CF92-DBA0-0232-84664A8B7155">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-07 12:31:56 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="Pr_OF_FK__IDX" id="9BADA90C-958A-5090-66B6-22EC51B28CA3">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-07 12:31:56 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Pr_Oferty_FK" id="20FF0749-4E38-1A90-0639-5FAE5E4A7B36">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-07 12:31:56 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<deferrable>YES</deferrable>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Pr_OF_FK" id="AAFFD908-3F86-EBDE-B0C0-3C282AD58AC7">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-07 12:31:56 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<deferrable>YES</deferrable>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Pr_PK" id="44511063-6FB8-6005-95A8-433B09E65F8C">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-07 12:31:56 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

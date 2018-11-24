@@ -1,0 +1,98 @@
+SQL> INSERT INTO Oferty
+values (6, 'Program_1', 12000);
+
+1 row inserted.
+
+SQL> INSERT INTO Moduly
+values (36, 'Modul_new', 6);
+
+1 row inserted.
+
+SQL> INSERT INTO Moduly
+values (37, 'Fakturowanie', 6);
+
+1 row inserted.
+
+SQL> INSERT INTO Moduly (Nazwa, ID_Oferty)
+values ('Koszty', 3);
+
+Error starting at line : 10 in command -
+INSERT INTO Moduly (Nazwa, ID_Oferty)
+values ('Koszty', 3)
+Error report -
+SQL Error: ORA-00001: нарушено ограничение уникальности (BD2A29.MODULY_UN)
+00001. 00000 -  "unique constraint (%s.%s) violated"
+*Cause:    An UPDATE or INSERT statement attempted to insert a duplicate key.
+           For Trusted Oracle configured in DBMS MAC mode, you may see
+           this message if a duplicate entry exists at a different level.
+*Action:   Either remove the unique restriction or do not insert the key.
+SQL> INSERT INTO Moduly_w_obszarze
+values (4, 36);
+
+1 row inserted.
+
+SQL> INSERT INTO Moduly_w_obszarze
+values (1, 37);
+
+1 row inserted.
+
+SQL> INSERT INTO Pracochlonnosci
+values (6, 1, 'O', 5);
+
+1 row inserted.
+
+SQL> INSERT INTO Pracochlonnosci
+values (6, 4, 'Z', 2);
+
+1 row inserted.
+
+SQL> INSERT INTO Moduly (Nazwa, ID_Oferty)
+values ('Koszty', 5);
+
+1 row inserted.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> UPDATE Oferty
+SET Cena=Cena*1.2
+WHERE Cena<13000;
+
+1 row updated.
+
+SQL> UPDATE Moduly
+SET Nazwa='Magazyn'
+WHERE Nazwa='Modul_new';
+
+1 row updated.
+
+SQL> UPDATE Moduly_w_obszarze
+SET ID_obszaru=8
+WHERE ID_obszaru=7;
+
+Error starting at line : 34 in command -
+UPDATE Moduly_w_obszarze
+SET ID_obszaru=8
+WHERE ID_obszaru=7
+Error report -
+SQL Error: ORA-20225: Non Transferable FK constraint  on table Moduly_w_obszarze is violated
+ORA-06512: на  "BD2A29.FKNTM_MODULY_W_OBSZARZE", line 1
+ORA-04088: ошибка во время выполнения триггера 'BD2A29.FKNTM_MODULY_W_OBSZARZE'
+
+SQL> DELETE FROM Oferty
+WHERE Nazwa='Program_1';
+
+1 row deleted.
+
+SQL> DELETE FROM Moduly
+WHERE Nazwa='Koszty'
+AND ID_Oferty=5;
+
+1 row deleted.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> spool off

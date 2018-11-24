@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79092018-BF44-CA4C-BFF7-8B2745B42CEA" name="Obszar funkcjonalny">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 16:25:03 UTC</createdTime>
+<commentInRDBMS>Obszary funkcjonalne, na ktore sie dziela moduly.</commentInRDBMS>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Obszary_funkcjonalne</preferredAbbreviation>
+<shortName>Obszar</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID obszaru" id="43476714-6C3E-4DF8-7094-BA778890DB56">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 17:02:37 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa" id="C45B54D2-9201-CAFC-9326-F4E1581911FA">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 17:03:03 UTC</createdTime>
+<commentInRDBMS>Nazwa obszaru funkcjonalnego.</commentInRDBMS>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Opis" id="F7772A70-5E9D-943C-3960-40828375B61A">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 17:04:56 UTC</createdTime>
+<commentInRDBMS>Opis obszaru.</commentInRDBMS>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7E654749-6BE2-39FE-C984-CB5E5F52FE23" name="OBSZAR_PK">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 17:05:46 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>43476714-6C3E-4DF8-7094-BA778890DB56</newElementsIDs>
+<usedAttributes>
+<attributeRef>43476714-6C3E-4DF8-7094-BA778890DB56</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="163993B5-6A50-919E-E170-BD6CC5830CCE" name="OBSZAR_UK">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 17:14:36 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="false"/>
+</engineerTo>
+<newElementsIDs>C45B54D2-9201-CAFC-9326-F4E1581911FA</newElementsIDs>
+<usedAttributes>
+<attributeRef>C45B54D2-9201-CAFC-9326-F4E1581911FA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

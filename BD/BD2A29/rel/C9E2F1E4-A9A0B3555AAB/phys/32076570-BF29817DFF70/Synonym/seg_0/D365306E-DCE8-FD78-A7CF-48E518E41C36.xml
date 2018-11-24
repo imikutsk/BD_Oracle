@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SynonymOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SynonymOraclev10g" name="Pracochlonnosci" directorySegmentName="seg_0" id="D365306E-DCE8-FD78-A7CF-48E518E41C36">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-23 12:36:28 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<object>Pracochlonnosci</object>
+<objectUser>995E37E7-50F6-C3E9-1A6C-1ACF4C665200</objectUser>
+<user>999C1E2A-9F39-33BC-4C4A-82303897386A</user>
+</SynonymOraclev10g>

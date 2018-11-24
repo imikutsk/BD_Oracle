@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B054E59-6630-E0D6-FC7B-C910E31E7C9F" name="Pracochlonnosci">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<commentInRDBMS>Wycenianie pracochlonnosci kazdego z obszarow kazdej oferty w osobodniach.</commentInRDBMS>
+<generatorID>9404C4CE-EECE-651C-9FDD-2D9F9F3AD13D</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<abbreviation>Pracochlonnosc</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Oferty" id="F9492F6F-CF92-DBA0-0232-84664A8B7155">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>30C3A4CE-47C0-D49D-D3C1-5B8B74C8B2D9</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="966FA04B-2016-EF6E-C6C7-DA5779747F52" referredColumn="40EF0EF2-1846-E1DB-3459-0F832999CD3B"/>
+</associations>
+</Column>
+<Column name="ID_obszaru" id="8E6B616E-C31F-8103-1650-F77F23A037CF">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>7C341112-F9C4-9A92-5C62-2739C069590A</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="803DFA1E-E7B3-53E2-705C-3124ABAD84D3" referredColumn="06A0AF4F-E370-E15E-9E7A-843FAD4BD23F"/>
+</associations>
+</Column>
+<Column name="Odpowiedzialny" id="4B4636E5-B140-5712-417B-0F7A852E2077">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<commentInRDBMS>Dwuwartosciowy. Wartosc: oferent (O) lub zamawiejący(Z).</commentInRDBMS>
+<generatorID>EAB067F2-CCA9-4589-D1C2-1D09FF32C565</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="O" description=""/>
+<valueDef value="Z" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wartosc_pracochlonnosci" id="A1E5E660-1993-75A3-8A48-98489D384695">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<commentInRDBMS>Wartosc w osobodniach</commentInRDBMS>
+<generatorID>64329E2F-A784-6B96-4AB2-85D51FD2DCFB</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="44511063-6FB8-6005-95A8-433B09E65F8C" name="Pr_PK">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>0BFD4BAF-72BE-D299-2A38-9058FD0D75CB</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9492F6F-CF92-DBA0-0232-84664A8B7155"/>
+<colUsage columnID="8E6B616E-C31F-8103-1650-F77F23A037CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BADA90C-958A-5090-66B6-22EC51B28CA3" name="Pr_OF_FK__IDX">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-07 11:15:18 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E6B616E-C31F-8103-1650-F77F23A037CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAFFD908-3F86-EBDE-B0C0-3C282AD58AC7" name="Pr_OF_FK">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>B2C0B580-7C3D-ED33-CEF5-23FAC81859A7</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E6B616E-C31F-8103-1650-F77F23A037CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20FF0749-4E38-1A90-0639-5FAE5E4A7B36" name="Pr_Oferty_FK">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-29 09:08:22 UTC</createdTime>
+<generatorID>138729B1-8E1A-022B-7BB2-FF3F912F28B5</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9492F6F-CF92-DBA0-0232-84664A8B7155"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

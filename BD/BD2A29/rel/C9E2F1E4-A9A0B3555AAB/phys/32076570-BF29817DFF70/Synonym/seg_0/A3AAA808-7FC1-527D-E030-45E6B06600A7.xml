@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SynonymOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SynonymOraclev10g" name="Moduly_w_obszarze" directorySegmentName="seg_0" id="A3AAA808-7FC1-527D-E030-45E6B06600A7">
+<createdBy>Администратор</createdBy>
+<createdTime>2017-01-23 12:33:27 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<object>Moduly_w_obszarze</object>
+<objectUser>995E37E7-50F6-C3E9-1A6C-1ACF4C665200</objectUser>
+<user>999C1E2A-9F39-33BC-4C4A-82303897386A</user>
+</SynonymOraclev10g>

@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="18BF3EFE-8439-B364-BAB9-54AE0481FD24" name="Modul w obszarze">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-06 16:23:47 UTC</createdTime>
+<commentInRDBMS>Moduly w obszarze funkcjonalnym.</commentInRDBMS>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Moduly_w_obszarze</preferredAbbreviation>
+<shortName>Modul_w_obszarze</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID obszaru" id="4F48032D-6543-A74E-3038-9F6E16C521F6">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-21 22:22:44 UTC</createdTime>
+<generatorID>7D50AC4F-4531-E50F-E7C4-94776F16DB9F</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<referedAttribute>43476714-6C3E-4DF8-7094-BA778890DB56</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID modulu" id="2754DEFA-1CB9-5740-9E11-043ECCF9727D">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-21 22:24:12 UTC</createdTime>
+<generatorID>8D4F2FF8-8555-F690-A2F8-83F43553BB17</generatorID>
+<ownerDesignName>BD2A29</ownerDesignName>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="true"/>
+</engineerTo>
+<referedAttribute>D8E7049E-E2B4-4D47-416C-325258F2E243</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="47BC32CC-BF45-65B1-DC52-806F3DC56A24" name="Obszar_modul">
+<createdBy>Администратор</createdBy>
+<createdTime>2016-12-21 22:25:41 UTC</createdTime>
+<ownerDesignName>BD2A29</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C9E2F1E4-B2FB-5C83-5C10-A9A0B3555AAB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>7D50AC4F-4531-E50F-E7C4-94776F16DB9F,8D4F2FF8-8555-F690-A2F8-83F43553BB17</newElementsIDs>
+<usedAttributes>
+<attributeRef>4F48032D-6543-A74E-3038-9F6E16C521F6</attributeRef>
+<attributeRef>2754DEFA-1CB9-5740-9E11-043ECCF9727D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
